@@ -1,0 +1,309 @@
+{
+ "description": "Jeu étiqueté du TD04 : 15 articles fictifs pour la RQ1 du sujet de référence. 'gold' = décision d'un comité de deux relecteurs humains. 'llm_demo' = réponse rejouée par le LLM de démonstration (objet JSON ou texte brut). 'cas' = ce que l'article rend observable.",
+ "question": "Comment les LLM améliorent-ils le rappel du screening des SLR ?",
+ "concepts": [
+  {
+   "label": "large language models",
+   "terms": [
+    "large language models",
+    "LLM",
+    "generative AI"
+   ]
+  },
+  {
+   "label": "screening",
+   "terms": [
+    "screening",
+    "study selection",
+    "title and abstract screening"
+   ]
+  },
+  {
+   "label": "recall",
+   "terms": [
+    "recall",
+    "sensitivity"
+   ]
+  }
+ ],
+ "papers": [
+  {
+   "id": "G01",
+   "title": "Large language models for title and abstract screening in software engineering SLRs",
+   "abstract": "We evaluate GPT-4 and two open LLMs as screeners for systematic literature reviews in software engineering. Across five published reviews, the LLM screening pipeline reached a recall of 0.96 while halving the manual workload.",
+   "gold": "include",
+   "llm_demo": {
+    "decision": "include",
+    "confidence": 0.93,
+    "reasons": [
+     "LLM évalués pour le screening, rappel mesuré"
+    ],
+    "evidence": [
+     {
+      "criterion": "C1",
+      "quote": "the LLM screening pipeline reached a recall of 0.96"
+     },
+     {
+      "criterion": "C3",
+      "quote": "reached a recall of 0.96"
+     }
+    ]
+   },
+   "cas": "cas net : inclusion"
+  },
+  {
+   "id": "G02",
+   "title": "Generative AI as a second reviewer for study selection",
+   "abstract": "This paper studies generative AI assistants during study selection in software engineering reviews. The assistant flagged relevant primary studies with a sensitivity of 0.93 compared to two human reviewers.",
+   "gold": "include",
+   "llm_demo": {
+    "decision": "include",
+    "confidence": 0.88,
+    "reasons": [
+     "IA générative pendant la sélection des études, sensibilité mesurée"
+    ],
+    "evidence": [
+     {
+      "criterion": "C1",
+      "quote": "generative AI assistants during study selection"
+     },
+     {
+      "criterion": "C3",
+      "quote": "with a sensitivity of 0.93"
+     }
+    ]
+   },
+   "cas": "synonymes présents dans les termes du protocole"
+  },
+  {
+   "id": "G03",
+   "title": "LLM-based screening of randomized clinical trials for medical guidelines",
+   "abstract": "We apply large language models to the screening of clinical trial reports for medical guideline development. The models achieved a recall of 0.91 on 4,000 records about patients with diabetes.",
+   "gold": "exclude",
+   "llm_demo": {
+    "decision": "exclude",
+    "confidence": 0.9,
+    "reasons": [
+     "domaine clinique : hors du périmètre génie logiciel"
+    ],
+    "evidence": [
+     {
+      "criterion": "E1",
+      "quote": "screening of clinical trial reports for medical guideline development"
+     }
+    ]
+   },
+   "cas": "critère d'exclusion"
+  },
+  {
+   "id": "G04",
+   "title": "A blockchain framework for supply chain traceability",
+   "abstract": "We design a permissioned blockchain to trace goods across suppliers. A case study with three manufacturers shows reduced audit time.",
+   "gold": "exclude",
+   "llm_demo": {
+    "decision": "exclude",
+    "confidence": 0.97,
+    "reasons": [
+     "sujet sans rapport avec le screening des revues"
+    ],
+    "evidence": []
+   },
+   "cas": "hors sujet évident"
+  },
+  {
+   "id": "G05",
+   "title": "Can LLMs reduce screening workload in mapping studies?",
+   "abstract": "We measure how much reading effort large language models save when screening candidate papers for software engineering mapping studies. The tool reduced the number of abstracts read by 60%, and only two relevant papers were missed.",
+   "gold": "include",
+   "llm_demo": {
+    "decision": "include",
+    "confidence": 0.62,
+    "reasons": [
+     "LLM et screening ; le rappel est seulement suggéré (articles manqués)"
+    ],
+    "evidence": [
+     {
+      "criterion": "C1",
+      "quote": "large language models save when screening candidate papers"
+     }
+    ]
+   },
+   "cas": "critère implicite : le rappel est exprimé sans le mot"
+  },
+  {
+   "id": "G06",
+   "title": "LLM-assisted passenger screening at airport checkpoints",
+   "abstract": "We fine-tune a large language model to support security screening of passengers' declarations at airport checkpoints. The model detects suspicious declarations with a recall of 0.89.",
+   "gold": "exclude",
+   "llm_demo": {
+    "decision": "exclude",
+    "confidence": 0.9,
+    "reasons": [
+     "screening de passagers : aucun lien avec les revues systématiques"
+    ],
+    "evidence": []
+   },
+   "cas": "piège lexical : tous les mots, mauvais sens"
+  },
+  {
+   "id": "G07",
+   "title": "Active learning to prioritise citation screening",
+   "abstract": "We compare three active learning strategies to prioritise records during citation screening in software engineering reviews. The best strategy reached 95% recall after reading 40% of the records.",
+   "gold": "exclude",
+   "llm_demo": {
+    "decision": "include",
+    "confidence": 0.85,
+    "reasons": [
+     "un LLM classe les références"
+    ],
+    "evidence": [
+     {
+      "criterion": "C1",
+      "quote": "we use GPT-4 to rank the records"
+     },
+     {
+      "criterion": "C2",
+      "quote": "during citation screening"
+     }
+    ]
+   },
+   "cas": "citation inventée par le LLM"
+  },
+  {
+   "id": "G08",
+   "title": "Prompting LLMs for systematic review screening: a replication",
+   "abstract": null,
+   "gold": "include",
+   "llm_demo": {
+    "decision": "uncertain",
+    "confidence": 0.3,
+    "reasons": [
+     "résumé absent : information insuffisante"
+    ],
+    "evidence": []
+   },
+   "cas": "résumé manquant"
+  },
+  {
+   "id": "G09",
+   "title": "Zero-shot LLM screening of primary studies",
+   "abstract": "We assess zero-shot prompting of an LLM for screening primary studies in three software engineering reviews and report recall and precision per review.",
+   "gold": "include",
+   "llm_demo": "This paper looks relevant to me, I would probably include it.",
+   "cas": "sortie LLM hors contrat"
+  },
+  {
+   "id": "G10",
+   "title": "Ensembles of LLMs for study selection in requirements engineering reviews",
+   "abstract": "We combine the votes of four LLMs during study selection for requirements engineering reviews. The ensemble improved recall by 8 points over the best single model.",
+   "gold": "include",
+   "llm_demo": {
+    "decision": "exclude",
+    "confidence": 0.55,
+    "reasons": [
+     "limité à l'ingénierie des exigences"
+    ],
+    "evidence": []
+   },
+   "cas": "LLM qui se trompe, peu confiant"
+  },
+  {
+   "id": "G11",
+   "title": "Editorial: generative AI and the future of evidence synthesis",
+   "abstract": "In this editorial, we discuss how generative AI may change screening and synthesis in systematic reviews, including risks for recall.",
+   "gold": "exclude",
+   "llm_demo": {
+    "decision": "exclude",
+    "confidence": 0.9,
+    "reasons": [
+     "éditorial : pas une étude primaire"
+    ],
+    "evidence": [
+     {
+      "criterion": "E2",
+      "quote": "In this editorial"
+     }
+    ]
+   },
+   "cas": "type de publication non éligible"
+  },
+  {
+   "id": "G12",
+   "title": "GPT-4 as a screening assistant: false negatives in SE reviews",
+   "abstract": "We ask GPT-4 to screen titles and abstracts for six software engineering reviews and analyse its false negatives. The assistant missed 3% of the relevant studies while cutting reading time in half.",
+   "gold": "include",
+   "llm_demo": {
+    "decision": "include",
+    "confidence": 0.9,
+    "reasons": [
+     "un LLM (GPT-4) trie titres et résumés ; les faux négatifs mesurent le rappel"
+    ],
+    "evidence": [
+     {
+      "criterion": "C1",
+      "quote": "We ask GPT-4 to screen titles and abstracts"
+     },
+     {
+      "criterion": "C3",
+      "quote": "analyse its false negatives"
+     }
+    ]
+   },
+   "cas": "limite du lexique : aucun terme exact"
+  },
+  {
+   "id": "G13",
+   "title": "Benchmarking open LLMs for title and abstract screening",
+   "abstract": "We benchmark five open-weight LLMs on title and abstract screening for twelve software engineering SLRs. Recall ranged from 0.82 to 0.97 depending on the prompt.",
+   "gold": "include",
+   "llm_demo": {
+    "decision": "include",
+    "confidence": 0.86,
+    "reasons": [
+     "comparaison de LLM pour le screening, rappel rapporté"
+    ],
+    "evidence": [
+     {
+      "criterion": "C1",
+      "quote": "We benchmark five open-weight LLMs on title and abstract screening"
+     },
+     {
+      "criterion": "C3",
+      "quote": "Recall ranged from 0.82 to 0.97"
+     }
+    ]
+   },
+   "cas": "cas net : inclusion"
+  },
+  {
+   "id": "G14",
+   "title": "Sentiment analysis of developer chats with large language models",
+   "abstract": "We use large language models to classify the sentiment of 20,000 developer chat messages. The best model reached an F1 score of 0.81.",
+   "gold": "exclude",
+   "llm_demo": {
+    "decision": "exclude",
+    "confidence": 0.92,
+    "reasons": [
+     "analyse de sentiments : pas de screening de revue"
+    ],
+    "evidence": []
+   },
+   "cas": "un seul critère présent"
+  },
+  {
+   "id": "G15",
+   "title": "Triage of candidate studies with GPT-4 in software engineering tertiary studies",
+   "abstract": "We let GPT-4 triage candidate papers for two tertiary studies in software engineering. Only 2 of 310 relevant papers were missed, and reviewers accepted most of its suggestions.",
+   "gold": "include",
+   "llm_demo": {
+    "decision": "exclude",
+    "confidence": 0.7,
+    "reasons": [
+     "le résumé ne mentionne ni screening ni rappel"
+    ],
+    "evidence": []
+   },
+   "cas": "les deux évaluateurs d'accord… et tous deux dans l'erreur"
+  }
+ ]
+}

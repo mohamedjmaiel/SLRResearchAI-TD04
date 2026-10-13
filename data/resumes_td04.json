@@ -1,0 +1,94 @@
+{
+ "description": "Résumés simulés des articles du catalogue du TD03 (clé = DOI normalisé, sinon identifiant). null : résumé indisponible. 'llm_demo' : réponse rejouée par le LLM de démonstration.",
+ "abstracts": {
+  "10.5555/slr.2024.001": {
+   "abstract": "We evaluate large language models as title and abstract screeners for systematic reviews in software engineering. The best configuration reached a recall of 0.95 on four replicated reviews.",
+   "llm_demo": {
+    "decision": "include",
+    "confidence": 0.9,
+    "reasons": [
+     "LLM évalués pour le screening, rappel mesuré"
+    ],
+    "evidence": [
+     {
+      "criterion": "C1",
+      "quote": "We evaluate large language models as title and abstract screeners"
+     },
+     {
+      "criterion": "C3",
+      "quote": "reached a recall of 0.95"
+     }
+    ]
+   }
+  },
+  "10.5555/slr.2023.014": {
+   "abstract": "We study how reviewers supervise generative AI suggestions during study selection, and which decisions must stay human.",
+   "llm_demo": {
+    "decision": "include",
+    "confidence": 0.65,
+    "reasons": [
+     "IA générative et sélection des études ; rappel non mesuré"
+    ],
+    "evidence": [
+     {
+      "criterion": "C1",
+      "quote": "supervise generative AI suggestions during study selection"
+     }
+    ]
+   }
+  },
+  "10.5555/slr.2022.207": {
+   "abstract": "We compare five automated screening tools based on active learning and report their recall on six benchmark reviews.",
+   "llm_demo": {
+    "decision": "exclude",
+    "confidence": 0.8,
+    "reasons": [
+     "outils d'apprentissage actif : aucun LLM"
+    ],
+    "evidence": []
+   }
+  },
+  "s2-7f3a": {
+   "abstract": null,
+   "llm_demo": {
+    "decision": "uncertain",
+    "confidence": 0.3,
+    "reasons": [
+     "résumé absent : information insuffisante"
+    ],
+    "evidence": []
+   }
+  },
+  "10.5555/slr.2021.033": {
+   "abstract": "A benchmark of active learning methods for citation screening; recall is measured at fixed reading effort.",
+   "llm_demo": {
+    "decision": "exclude",
+    "confidence": 0.88,
+    "reasons": [
+     "apprentissage actif : aucun LLM"
+    ],
+    "evidence": []
+   }
+  },
+  "https://openalex.org/W1004": {
+   "abstract": "We design prompts that help LLMs screen titles and abstracts for systematic review automation, and we measure sensitivity on five reviews.",
+   "llm_demo": {
+    "decision": "include",
+    "confidence": 0.85,
+    "reasons": [
+     "prompts pour LLM, sensibilité mesurée"
+    ],
+    "evidence": [
+     {
+      "criterion": "C1",
+      "quote": "We design prompts that help LLMs screen titles and abstracts"
+     },
+     {
+      "criterion": "C3",
+      "quote": "we measure sensitivity on five reviews"
+     }
+    ]
+   }
+  }
+ }
+}

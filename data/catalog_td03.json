@@ -1,0 +1,262 @@
+{
+ "description": "Catalogue simulé du TD03. Chaque outil rejoue ses réponses dans l'ordre des appels ; la dernière réponse est répétée. Une réponse {\"error\": 429} simule un quota atteint, {\"error\": 500} une erreur HTTP, {\"error\": \"network\"} une panne réseau. Les DOI du préfixe 10.5555 sont fictifs.",
+ "scenarios": {
+  "stable": {
+   "openalex": [
+    [
+     {
+      "id": "https://openalex.org/W1001",
+      "display_name": "Large language models for title and abstract screening in systematic reviews",
+      "doi": "https://doi.org/10.5555/SLR.2024.001",
+      "publication_year": 2024,
+      "open_access": {
+       "is_oa": true
+      }
+     },
+     {
+      "id": "https://openalex.org/W1002",
+      "display_name": "Human-in-the-loop study selection with generative AI",
+      "doi": "https://doi.org/10.5555/slr.2023.014",
+      "publication_year": 2023,
+      "open_access": {
+       "is_oa": false
+      }
+     }
+    ]
+   ],
+   "crossref": [
+    [
+     {
+      "DOI": "10.5555/slr.2024.001",
+      "title": [
+       "Large Language Models for Title and Abstract Screening in Systematic Reviews"
+      ],
+      "URL": "https://doi.org/10.5555/slr.2024.001",
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         3
+        ]
+       ]
+      }
+     },
+     {
+      "DOI": "10.5555/SLR.2022.207",
+      "title": [
+       "Evaluating the recall of automated screening tools"
+      ],
+      "URL": "https://doi.org/10.5555/slr.2022.207",
+      "issued": {
+       "date-parts": [
+        [
+         2022
+        ]
+       ]
+      }
+     }
+    ]
+   ],
+   "semantic_scholar": [
+    []
+   ],
+   "openalex_broad": [
+    [
+     {
+      "id": "https://openalex.org/W1005",
+      "display_name": "Active learning for citation screening: a benchmark",
+      "doi": "https://doi.org/10.5555/slr.2021.033",
+      "publication_year": 2021,
+      "open_access": {
+       "is_oa": true
+      }
+     }
+    ]
+   ]
+  },
+  "perturbe": {
+   "openalex": [
+    [
+     {
+      "id": "https://openalex.org/W1001",
+      "display_name": "Large language models for title and abstract screening in systematic reviews",
+      "doi": "https://doi.org/10.5555/SLR.2024.001",
+      "publication_year": 2024,
+      "open_access": {
+       "is_oa": true
+      }
+     },
+     {
+      "id": "https://openalex.org/W1002",
+      "display_name": "Human-in-the-loop study selection with generative AI",
+      "doi": "https://doi.org/10.5555/slr.2023.014",
+      "publication_year": 2023,
+      "open_access": {
+       "is_oa": false
+      }
+     }
+    ]
+   ],
+   "crossref": [
+    [
+     {
+      "DOI": "10.5555/slr.2024.001",
+      "title": [
+       "Large Language Models for Title and Abstract Screening in Systematic Reviews"
+      ],
+      "URL": "https://doi.org/10.5555/slr.2024.001",
+      "issued": {
+       "date-parts": [
+        [
+         2024,
+         3
+        ]
+       ]
+      }
+     },
+     {
+      "DOI": "10.5555/SLR.2022.207",
+      "title": [
+       "Evaluating the recall of automated screening tools"
+      ],
+      "URL": "https://doi.org/10.5555/slr.2022.207",
+      "issued": {
+       "date-parts": [
+        [
+         2022
+        ]
+       ]
+      }
+     }
+    ]
+   ],
+   "semantic_scholar": [
+    {
+     "error": 429
+    },
+    [
+     {
+      "paperId": "s2-7f3a",
+      "title": "Prompt engineering for systematic review automation",
+      "externalIds": {},
+      "url": "https://www.semanticscholar.org/paper/s2-7f3a",
+      "year": 2025,
+      "isOpenAccess": true
+     }
+    ]
+   ],
+   "openalex_broad": [
+    [
+     {
+      "id": "https://openalex.org/W1005",
+      "display_name": "Active learning for citation screening: a benchmark",
+      "doi": "https://doi.org/10.5555/slr.2021.033",
+      "publication_year": 2021,
+      "open_access": {
+       "is_oa": true
+      }
+     }
+    ]
+   ]
+  },
+  "maigre": {
+   "openalex": [
+    [
+     {
+      "id": "https://openalex.org/W1001",
+      "display_name": "Large language models for title and abstract screening in systematic reviews",
+      "doi": "https://doi.org/10.5555/SLR.2024.001",
+      "publication_year": 2024,
+      "open_access": {
+       "is_oa": true
+      }
+     }
+    ]
+   ],
+   "crossref": [
+    []
+   ],
+   "semantic_scholar": [
+    []
+   ],
+   "openalex_broad": [
+    [
+     {
+      "id": "https://openalex.org/W1002",
+      "display_name": "Human-in-the-loop study selection with generative AI",
+      "doi": "https://doi.org/10.5555/slr.2023.014",
+      "publication_year": 2023,
+      "open_access": {
+       "is_oa": false
+      }
+     },
+     {
+      "id": "https://openalex.org/W1005",
+      "display_name": "Active learning for citation screening: a benchmark",
+      "doi": "https://doi.org/10.5555/slr.2021.033",
+      "publication_year": 2021,
+      "open_access": {
+       "is_oa": true
+      }
+     },
+     {
+      "id": "https://openalex.org/W1004",
+      "display_name": "Prompt Engineering for  Systematic Review Automation",
+      "doi": null,
+      "publication_year": 2025,
+      "open_access": {
+       "is_oa": true
+      }
+     }
+    ]
+   ]
+  },
+  "panne": {
+   "openalex": [
+    [
+     {
+      "id": "https://openalex.org/W1001",
+      "display_name": "Large language models for title and abstract screening in systematic reviews",
+      "doi": "https://doi.org/10.5555/SLR.2024.001",
+      "publication_year": 2024,
+      "open_access": {
+       "is_oa": true
+      }
+     },
+     {
+      "id": "https://openalex.org/W1002",
+      "display_name": "Human-in-the-loop study selection with generative AI",
+      "doi": "https://doi.org/10.5555/slr.2023.014",
+      "publication_year": 2023,
+      "open_access": {
+       "is_oa": false
+      }
+     }
+    ]
+   ],
+   "crossref": [
+    {
+     "error": 500
+    }
+   ],
+   "semantic_scholar": [
+    {
+     "error": "network"
+    }
+   ],
+   "openalex_broad": [
+    [
+     {
+      "id": "https://openalex.org/W1005",
+      "display_name": "Active learning for citation screening: a benchmark",
+      "doi": "https://doi.org/10.5555/slr.2021.033",
+      "publication_year": 2021,
+      "open_access": {
+       "is_oa": true
+      }
+     }
+    ]
+   ]
+  }
+ }
+}

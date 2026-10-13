@@ -1,0 +1,1 @@
+"""SLRResearchAI, parcours agentique cumulatif."""
